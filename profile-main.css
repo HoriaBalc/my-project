@@ -1,0 +1,47 @@
+:root{
+    --primary:rgb(196, 189, 153);
+    --title-profile:rgb(42, 66, 58);
+    --white:rgb(255, 255, 255);
+    --subtitles:rgb(23, 102, 76);
+}
+body{
+    background-color: var(--primary);
+}
+
+#profile{
+    display: flex;
+}
+
+.img-profile img{
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    border:ridge 2px var(--white);
+
+}
+
+
+#profile p strong{
+    font-family: 'DM Serif Display', serif;
+    color: var(--title-profile) ;
+}
+#profile a{
+    font-style: italic;
+}
+
+legend{
+    color: var(--subtitles);
+    font-size: 1.5rem;
+    font-family: 'Playball', cursive;
+}
+
+section fieldset .main-legend{
+    font-size: 1rem;
+    font-family: 'Playball', cursive;
+    color: var(--white);
+}
+
+p strong{
+    font-family:'Fugaz One', cursive;
+    color: var(--subtitles);
+}
