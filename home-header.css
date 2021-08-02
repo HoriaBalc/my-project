@@ -3,9 +3,14 @@
 #title{
     font-size: 3rem;
     font-family: cursive;
-    color: var(--title);
     padding: 0px 15px;
-   flex-grow: 0.96;
+    flex-grow: 0.96;
+}
+
+#title a{
+      text-decoration: none;
+      color: var(--title);
+
 }
 
 .nav-mobile ul{
@@ -176,6 +181,7 @@
    #title{
      flex-grow: 0.5 ;
    }
+
     .nav-mobile{
         display: none;
     }
@@ -188,6 +194,8 @@ header, html, body{
 }
 header{
     background-color: var(--secondary);
+    position: fixed;
+    z-index: 100;
 }
 
 .container{

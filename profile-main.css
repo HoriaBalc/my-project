@@ -1,15 +1,16 @@
-:root{
-    --primary:rgb(196, 189, 153);
-    --title-profile:rgb(42, 66, 58);
-    --white:rgb(255, 255, 255);
-    --subtitles:rgb(23, 102, 76);
-}
+@import "./profile-themes.css";
+
 body{
     background-color: var(--primary);
 }
 
 #profile{
     display: flex;
+}
+
+section{
+    position: relative;
+    top: 5.5rem;
 }
 
 .img-profile img{
@@ -36,12 +37,24 @@ legend{
 }
 
 section fieldset .main-legend{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'Playball', cursive;
     color: var(--white);
+    position: sticky;
+    z-index: 100;
+    top:4rem
 }
 
 p strong{
     font-family:'Fugaz One', cursive;
     color: var(--subtitles);
+}
+
+@media screen and (max-width:640px){
+        #profile{
+            flex-direction: column;
+            text-align: center;
+        }
+
+
 }

@@ -16,12 +16,46 @@
     <title>My CV</title>
 </head>
 <body>
-    <header class="header-section">
-        <div id="title">Curriculum vitae:</div>
+
+    <header class="container">
+        <div id="title"><a href="#main">Curriculum vitae</a></div>
+        <nav class="nav-mobile">
+             
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="links-mobile">
+                    <a href="#education"><li>Education </li></a>
+                    <a href="#skills"><li>Skills </li></a>
+                    <a href="#hobbies"><li>Hobbies</li></a>
+                    <a href="./index.html"><li> Home</li></a>
+                </ul>
+            </div>
+        </nav>
+
+       
+
+        
+
+        <nav class="nav-desktop">
+            <ul  class="links-desktop">
+                <a href="#education"><li>Education </li></a>
+                <a href="#skills"><li>Skills </li></a>
+                <a href="#hobbies"><li>Hobbies</li></a>
+                <a href="./index.html"><li> Home</li></a>
+            </ul>
+
+        </nav>
+
+
     </header>
 
     
-    <main>
+
+    
+    <main id="main">
         
         <section id="profile">
             <div class="img-profile">
@@ -52,7 +86,7 @@
                     <fieldset id="school">
                         <legend ><strong>High school Diploma</strong> </legend>
     
-                        <figure>
+                        
                             <p> <strong >Nicolae Balcescu High school </strong>[ 2014 – 2018 ] </p>
                             <p> <strong >Address:  </strong> 400158 Cluj-Napoca (Romania) </p>
                             <p> <strong >Field(s) of study:</strong>  Mathematics and computer science, intensive computer science </p>
@@ -62,12 +96,12 @@
                                     <li>Second prize at the 2016/2017 County Mathematical Olympiad</li>
                                     <li>Mention at the county mathematics olympiad 2017/2018</li>
                                     <li>Second prize at the Inter-county mathematics competition "Teodor Topan" 2017/2018</li>
-                                    <li>Special mention at the inter-county contest "Gheorghe Lazar" 2015/2016</li>
-                                    <li>Participation in the project Discover your passion in IT</li>            
-                                </ul>               
+                                    <li >Special mention at the inter-county contest "Gheorghe Lazar" 2015/2016</li>
+                                    <li >Participation in the project Discover your passion in IT</li>            
+                              </ul>               
                             </p>             
-                        </figure>    
-                    </fieldset>
+                            
+                    </fieldset>  
                 </fieldset>
             </figure>
         </section>
@@ -78,7 +112,7 @@
                     <legend class="main-legend" > <strong>SKILLS</strong> </legend>
                     <fieldset id="language skills">
                         <legend > <strong>Language</strong> </legend> 
-                            <p >Mother tongue(s):  <span >Romanian</span></p>
+                            <p >Main tongue(s):  <span >Romanian</span></p>
                             <p >Other language(s):</p>
                             <p > <span >English:</span> <strong style="color:rgb(42, 66, 58);">LISTENING</strong> B2 <strong style="color:rgb(42, 66, 58);">READING</strong> B2 <strong style="color:rgb(42, 66, 58);">WRITING</strong> B2 <strong style="color:rgb(42, 66, 58);">SPOKEN PRODUCTION</strong> B2 <strong style="color:rgb(42, 66, 58);">SPOKEN INTERACTION</strong> B2</p>
                             <p >French:</span> <strong >LISTENING</strong> A2 <strong >READING</strong> A2 <strong style="color:rgb(42, 66, 58);">WRITING</strong> A2 <strong style="color:rgb(42, 66, 58);">SPOKEN PRODUCTION</strong> A2 <strong style="color:rgb(42, 66, 58);">SPOKEN INTERACTION</strong> A2</p>        
@@ -107,7 +141,7 @@
             </figure>
         </section>
 
-        <section id="hobbies and interests">
+        <section id="hobbies">
             <figure>
                 <fieldset>
                     <legend class="main-legend" ><strong>HOBBIES AND INTERESTS</strong>  </legend>
