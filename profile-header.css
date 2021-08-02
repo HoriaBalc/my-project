@@ -127,7 +127,6 @@
       padding: 10px 0px;
       font-size: 22px;
       color: var(--white);
-      z-index: 110;
     }
   
    .nav-mobile .links-mobile li:hover{
