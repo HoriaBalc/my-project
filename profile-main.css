@@ -41,8 +41,8 @@ section fieldset .main-legend{
     font-family: 'Playball', cursive;
     color: var(--white);
     position: sticky;
-    z-index: 99;
-    top:4rem
+    z-index: 100;
+    top:4rem;
 }
 
 p strong{

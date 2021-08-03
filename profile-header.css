@@ -12,6 +12,9 @@
     color: var(--title);
 }
 
+.nav-mobile{
+    z-index: 101;
+}
 
 .nav-mobile ul{
     list-style-type: none;
