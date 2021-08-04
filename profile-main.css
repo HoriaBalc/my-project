@@ -21,6 +21,14 @@ section{
 
 }
 
+#profile a:hover{
+    color: var(--aHover);
+}
+
+
+p u{
+    color: var(--secondary);
+}
 
 #profile p strong{
     font-family: 'DM Serif Display', serif;

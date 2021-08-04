@@ -1,7 +1,7 @@
 :root{
-    --primary: rgb(219, 139, 35);
-    --secondary: rgb(6, 68, 68);;
-    --title: aqua;
+    --primary: rgb(196, 189, 153);
+    --secondary: rgb(6, 68, 68);
+    --title: #fca311;
     --menuToggle:rgb(231, 231, 231);
-    --primary1:rgb(75, 0, 0);
+    --text:rgb(20, 0, 0);
 }
