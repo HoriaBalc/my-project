@@ -1,0 +1,49 @@
+:root{
+    --primary:rgb(196, 189, 153);
+    --title: #fca311;
+    --title-profile:rgb(42, 66, 58);
+    --white:rgb(255, 255, 255);
+    --subtitles:rgb(23, 102, 76);
+    --secondary:rgb(6, 68, 68);
+    --aHover:rgb(23, 102, 76);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+}
+main{
+    background-color: var(--primary);
+    color: var(--text);
+}
+fieldset{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+fieldset legend{
+    font-family: 'Satisfy', cursive;
+     font-size: 22px;
+     color: var(--white);
+}
+section{
+    position: relative;
+    top: 5.5rem;
+}
+
+main a:hover {
+    color: var(--white);
+}
+
+footer{
+    position: relative;
+    top:5rem;
+    background-color: var(--secondary);
+}
+
+footer ul{
+   
+    display: flex;
+    flex-direction:row;
+}

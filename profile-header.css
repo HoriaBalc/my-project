@@ -1,6 +1,6 @@
 @import "./profile-themes.css";
 #title{
-    font-size: 2em;
+    font-size: 2rem;
     font-family: cursive;
     flex-grow: 0.9;
     padding: 0px 15px;
@@ -189,6 +189,7 @@
       position: fixed;
       background-color: var(--secondary);
       z-index: 100;
+      font-size: 1.3rem;
   }
   header, html, body{
    

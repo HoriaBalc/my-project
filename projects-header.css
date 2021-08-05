@@ -1,0 +1,72 @@
+@import "./profile-themes.css";
+#title{
+    font-size: 2rem;
+    font-family: cursive;
+    flex-grow: 0.9 ;
+    padding: 0px 15px;
+    
+}
+
+#title a{
+    text-decoration: none;
+    color: var(--title);
+}
+
+.nav-desktop{
+    display: none;
+}
+
+.nav-desktop ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--secondary);
+  
+  }
+
+  .nav-mobile{
+            display: flex;
+
+  }
+
+  #p{
+    padding: 10px 0px;
+  }
+
+  .nav-mobile a{
+      text-decoration: none;
+      color: var(--white);
+      position: relative;
+      right: 1rem;
+      padding: 10px 0px;
+
+
+  }  
+  .nav-mobile a:hover{
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--secondary);
+    border-radius: 10px;
+    cursor: pointer;
+  animation: navAnime 2s infinite;
+  animation-timing-function:linear;
+  }
+
+  @keyframes navAnime{
+    0%{font-size:22px;}
+    50%{font-size:large;}
+    100%{font-size:22px;}
+  }
+
+ 
+  header{
+      display: flex;
+      position: fixed;
+      background-color: var(--secondary);
+      z-index: 100;
+      font-size: 1.3rem;;
+  }
+  header,footer, html, body{
+   
+    min-width: 100%;
+}
