@@ -39,3 +39,30 @@ details summary{
     color: var(--title);
 }
 
+footer{
+    position: relative;
+    height: 6rem;
+    background-color: var(--secondary);
+    top:10rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    top: 1.5rem;
+}
+
+footer ul li{
+    flex-grow: 1;
+    
+}
+
+footer ul li a{
+    color: var(--white);
+}
+
+footer  ul li a i{
+    font-size: 3rem !important;
+   
+}

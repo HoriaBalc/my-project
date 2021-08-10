@@ -1,12 +1,4 @@
-:root{
-    --primary:rgb(196, 189, 153);
-    --title: #fca311;
-    --title-profile:rgb(42, 66, 58);
-    --white:rgb(255, 255, 255);
-    --subtitles:rgb(23, 102, 76);
-    --secondary:rgb(6, 68, 68);
-    --aHover:rgb(23, 102, 76);
-}
+@import "./themes.css";
 
 body{
     display: flex;
@@ -40,10 +32,28 @@ footer{
     position: relative;
     top:5rem;
     background-color: var(--secondary);
+    height: 6rem;
+
 }
 
 footer ul{
-   
+    position: relative;
+    top: 0.5rem;
     display: flex;
     flex-direction:row;
+    
+}
+
+footer ul li{
+    flex-grow: 1;
+    
+}
+
+footer ul li a{
+    color: var(--white);
+}
+
+footer  ul li a i{
+    font-size: 3rem !important;
+   
 }

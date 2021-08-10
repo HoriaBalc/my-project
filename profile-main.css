@@ -1,4 +1,4 @@
-@import "./profile-themes.css";
+@import "./themes.css";
 
 body{
     background-color: var(--primary);
@@ -65,4 +65,30 @@ p strong{
         }
 
 
+}
+footer{
+    position: relative;
+    top:5rem;
+    height: 6rem;
+    background-color: var(--secondary);
+
+}
+
+footer ul{
+    position: relative;
+    top:1.5rem;
+    display: flex;
+    flex-direction:row;
+}
+
+footer ul li{
+    flex-grow: 1;
+}
+
+footer ul li a{
+    color: var(--white);
+}
+footer  ul li a i{
+    font-size: 3rem !important;
+   
 }
