@@ -39,6 +39,39 @@ details summary{
     color: var(--title);
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+}
+
+#yourEmail{
+    height: 1rem;
+    width: 25rem;
+    
+    background-color: var(--inputs);
+
+}
+
+#password{
+    height: 1rem;
+    width: 25rem;
+    background-color: var(--inputs);
+}
+
+#subject{
+    height: 1rem;
+    width: 25rem;
+    background-color: var(--inputs);
+
+}
+
+#content{
+    height: 25rem;
+    width: 50rem;
+    background-color: var(--inputs);
+
+}
+
 footer{
     position: relative;
     height: 6rem;

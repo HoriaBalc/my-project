@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./index.css">
+    <script src=
+    "https://smtpjs.com/v3/smtp.js" defer>
+  </script>
     <script src="https://kit.fontawesome.com/fe13303fd6.js" crossorigin="anonymous"></script>
+    <script src="./sendEmail.js" defer></script>
 
 </head>
 <body>
@@ -41,15 +45,40 @@
 
     </header>
     
-    <main id="main"><fieldset>
-        <details>
-            <summary>
-                About me
-            </summary>
-            
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis, eaque minima nobis libero tempore nemo, inventore explicabo officiis qui natus repudiandae repellendus tenetur magni temporibus hic perferendis repellat aspernatur!
-            
-        </details>
+    <main id="main">
+        
+        <fieldset>
+            <details>
+                <summary>
+                    About me
+                </summary>
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis, eaque minima nobis libero tempore nemo, inventore explicabo officiis qui natus repudiandae repellendus tenetur magni temporibus hic perferendis repellat aspernatur!
+                
+            </details>
+       </fieldset>
+       <fieldset>
+            <details id="contact">
+                <summary>
+                    Contact me
+                </summary>
+
+                <form action="https://formsubmit.co/balc_horia@yahoo.com" method="POST">        
+                    <input type="email" name="email" placeholder="Email adress" required>
+                    <input type="hidden" name="_subject" value="New email!">
+                    <input type="text" name="message" placeholder="Write your message here!" required>
+                    <input type="hidden" name="_next" value="./thankYou.html">
+                    <button type="submit">Send</button>
+               </form>
+
+                    <!--<input type="text" id="yourEmail" placeholder="Your email adress">
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="text" id="subject" placeholder="Subject">
+                    <textarea id="content" placeholder="Write evrithing you want to say to me, even some things to make this site more interesting"></textarea>
+                    <form method="post" enctype="multipart/form-data">
+                        <input id="send" type="button" value="Send"/>
+                    </form>-->
+
+            </details>
        </fieldset>
     </main>
     <footer>

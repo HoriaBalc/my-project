@@ -12,9 +12,7 @@
     color: var(--title);
 }
 
-.nav-mobile{
-    z-index: 101;
-}
+
 
 .nav-mobile ul{
     list-style-type: none;
@@ -31,6 +29,7 @@
     margin: 0px;
     transform: translate(0%, -200%);
     transition: transform 0.5s cubic-bezier(0.77,1,0.05,1.0);
+
 }
 .nav-desktop{
     display: none;
@@ -163,11 +162,11 @@
       flex-direction: column ;
     } 
   
- /*@media screen and (min-width:520px) {
+ @media screen and (min-width:520px) {
      #title{
         flex-grow: 0.98;
       }
-  }*/
+  }
 
 
   @media screen and (min-width:769px) {
@@ -188,10 +187,13 @@
       display: flex;
       position: fixed;
       background-color: var(--secondary);
-      z-index: 100;
+      z-index: 9;
       font-size: 1.3rem;
   }
   header, html, body{
    
     min-width: 100%;
+}
+.nav-mobile ul{
+  z-index: 10;
 }
