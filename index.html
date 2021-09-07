@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="container">
-        <div id="title"><a href="#main">Home</a></div>
+        <div id="title"><a href="./index.html">Home</a></div>
         <nav class="nav-mobile">
              
             <div id="menuToggle">
@@ -26,8 +26,8 @@
                 <ul class="links-mobile">
                     <a href="./projects.html"><li>My projects</li></a>
                     <a href="./profile.html"><li>My CV</li></a>
-                    <a href="https://github.com/HoriaBalc"><li>My github </br> profile <i class="fab fa-github"></i> </li></a>
-                    <a href="https://www.linkedin.com/in/horia-balc-8b5a84196/"><li>My linkedin profile</li></a>
+                    <a href="https://github.com/HoriaBalc" target="_blank"><li>My github </br> profile <i class="fab fa-github"></i> </li></a>
+                    <a href="https://www.linkedin.com/in/horia-balc-8b5a84196/" target="_blank"><li>My linkedin profile <i class="fab fa-linkedin"></i></li></a>
                 </ul>
             </div>
         </nav>
@@ -36,8 +36,8 @@
             <ul  class="links-desktop">
                 <a href="./projects.html"><li>My projects <br></li></a>
                 <a href="./profile.html"><li>My CV <br></li></a>
-                <a href="https://github.com/HoriaBalc"><li>My github <br>profile <i class="fab fa-github"></i></li></a>
-                <a href="https://www.linkedin.com/in/horia-balc-8b5a84196/"><li>My linkedin <br> profile</li></a>
+                <a href="https://github.com/HoriaBalc" target="_blank"><li>My github <br>profile <i class="fab fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/horia-balc-8b5a84196/" target="_blank"><li>My linkedin <br> profile <i class="fab fa-linkedin"></i></li></a>
             </ul>
 
         </nav>
@@ -52,7 +52,25 @@
                 <summary>
                     About me
                 </summary>
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis, eaque minima nobis libero tempore nemo, inventore explicabo officiis qui natus repudiandae repellendus tenetur magni temporibus hic perferendis repellat aspernatur!
+                
+                <div id="description">
+                    <i id="prev" class="fas fa-chevron-left" onclick="prev()"></i>
+                    <div id="pag1">
+                        <img src="https://brittskrabanek.files.wordpress.com/2021/01/i-can-do-it.jpeg" alt="moto">
+                       <p>Hi, I am Horia Balc and I am student at technical university of Cluj-Napoca. I did my practice at Endava in Front end domain, and I am very enthusiast about this and want to know more, also I am interesting in other subjets, too.</p>                     </div>
+                    <div id="pag2">
+                        <img src="./nature.jpg" alt="climbing and nature">
+                        <img src="./bike.jpg" alt="sports">
+                       <p> I like nature and practicing sports (in general cardio sports)  </p>    
+                    </div>
+                    <i id="next" class="fas fa-chevron-right" onclick="next()"></i>
+                </div>
+                
+                <div id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 
             </details>
        </fieldset>
@@ -62,33 +80,30 @@
                     Contact me
                 </summary>
 
-                <form action="https://formsubmit.co/balc_horia@yahoo.com" method="POST">        
-                    <input type="email" name="email" placeholder="Email adress" required>
-                    <textarea name="message" placeholder="Write your message here!" rows="10" cols="30" required></textarea>
+                <form id="yourEmail" action="https://formsubmit.co/balc_horia@yahoo.com" target="_blank" method="POST">  
+                   
+                        <label id="labelEmail" for="#email">Email<i class="fas fa-envelope-square"></i></label>      
+                        <input id="email" type="email" name="email" placeholder="Email adress" required>
+                    
+                    
+                        <label id="labelMessage" for="#message">Write a message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here!" rows="10" cols="30" required></textarea>
+                   
                     <input type="hidden" name="_subject" value="New email!">
                     
-                    <button type="submit">Send</button>
+                    <button type="submit" id="sendEmail" onclick="deleteFields()" >Send Email</button>
                </form>
-
-                    <!--<input type="text" id="yourEmail" placeholder="Your email adress">
-                    <input type="password" id="password" placeholder="Password">
-                    <input type="text" id="subject" placeholder="Subject">
-                    <textarea id="content" placeholder="Write evrithing you want to say to me, even some things to make this site more interesting"></textarea>
-                    <form method="post" enctype="multipart/form-data">
-                        <input id="send" type="button" value="Send"/>
-                    </form>-->
 
             </details>
        </fieldset>
     </main>
     <footer>
         <ul type="none" style="text-align: center;">
-          <li> <a href="./index.html"><i class="fas fa-home">
-          </i></a> </li>
-          <li> <a href="#projects"> <i class="fas fa-angle-double-up"></i></a></li>
-          <li> <a href="https://www.linkedin.com/in/horia-balc-8b5a84196/"><i class="fab fa-linkedin"></i></a></li>
+          <li> <a href="./index.html"><i class="fas fa-home"></i></a> </li>
+          <li> <a href="./index.html"> <i class="fas fa-angle-double-up"></i></a></li>
+          <li> <a href="https://www.linkedin.com/in/horia-balc-8b5a84196/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           <li> <a href="mailto:balc_horia@yahoo.com;" ><i class="fas fa-envelope-square"></i></a></li>
-          <li> <a href="https://github.com/HoriaBalc"><i class="fab fa-github"></i></a></li>
+          <li> <a href="https://github.com/HoriaBalc" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
       </footer>
 </body>

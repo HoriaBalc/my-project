@@ -5,7 +5,6 @@ body{
     background-color: var(--primary);
 }
 
-
 main {
     position: relative;
     top:5rem;
@@ -17,6 +16,7 @@ details{
     color:var(--text);
 
 }
+
 fieldset{
     padding: 0px;
     margin: 0px;
@@ -37,39 +37,92 @@ details summary{
     font-size: 2rem;
     margin: 5px;
     color: var(--title);
+    width: 100%;
 }
 
-#contact{
+#yourEmail{
     display: flex;
     flex-direction: column;
 }
 
-#yourEmail{
+#email{
     height: 1rem;
-    width: 25rem;
-    
+    width: 15rem;
     background-color: var(--inputs);
+    align-self: center;
+    margin: 0.5rem;
+}
+
+#message{
+    height: 10rem;
+    width: 15rem;
+    background-color: var(--inputs);
+    align-self: center;
+    margin: 0.5rem;
 
 }
 
-#password{
-    height: 1rem;
-    width: 25rem;
-    background-color: var(--inputs);
+.contact{
+    align-self: center;
 }
 
-#subject{
-    height: 1rem;
-    width: 25rem;
-    background-color: var(--inputs);
+#description{
+    display: flex;
+    margin-top: 1rem;
+}
+
+#description #pag1{
+    display: flex;
+    margin-top: 1rem;
+}
+
+#description img{
+    height: auto;
+    width:40%;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+}
+
+#labelEmail{
+    align-self: center;
+    color:var(--white);
+    position: relative;
+    right: 6.5rem; 
+    margin-top: 1rem;
+}
+
+#labelMessage{
+    align-self: center;
+    color:var(--white);
+    position: relative;
+    right: 3.5rem;
+   
+}
+
+#pag2{
+    display: none;
+}
+
+
+
+#prev{
+    display: none;
+}
+
+#sendEmail{
+    height: 2rem;
+    width: 15rem;
+    background-color: var(--title);
+    align-self: center;
+    cursor: pointer;
+    margin: 0.3rem;
+    color: var(--secondary);
+    border-radius: 1rem;
 
 }
 
-#content{
-    height: 25rem;
-    width: 50rem;
-    background-color: var(--inputs);
-
+#sendEmail:hover{
+    background-color: var(--secondary);
+    color: var(--title)
 }
 
 footer{
@@ -87,8 +140,7 @@ footer ul{
 }
 
 footer ul li{
-    flex-grow: 1;
-    
+    flex-grow: 1; 
 }
 
 footer ul li a{
@@ -97,5 +149,4 @@ footer ul li a{
 
 footer  ul li a i{
     font-size: 3rem !important;
-   
 }
